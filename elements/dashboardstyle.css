@@ -1,0 +1,431 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between; /* This will push the nav to the right */
+    align-items: center;
+    background-image: url(imgs/bg.png);
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Adjust the color to match your design */
+    font-weight: bold;
+}
+
+
+.login-button:hover {
+    background-color: #02a357; /* Darker shade on hover */
+}
+
+main {
+    background-color: #e0f2f1; /* Light background for the content */
+  
+    padding: 20px;
+    text-align: center; /* Centering the text */
+}
+
+.welcome-section h1 {
+    
+    color: #004d40; /* Dark green color for the heading */
+    margin: 20px 0;
+}
+
+.welcome-section .tagline {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start on small screens */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Full width for a vertical layout */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .logo, nav {
+        width: 100%; /* Make logo and nav take full width */
+        justify-content: center; /* Center content */
+    }
+}
+
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40; /* Adjust the color to match your design */
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px; /* Adjust as needed */
+}
+
+.navigation-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-menu li {
+    margin-left: 20px;
+}
+
+.navigation-menu li a, .login-button {
+    text-decoration: none;
+    color: white; /* Adjust the color to match your design */
+    font-weight: bold;
+}
+
+.login-button {
+    background-color: #00e676; /* Green background for login button */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.services-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex; /* Use flexbox to layout children */
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    gap: 10px; /* Space between buttons */
+    padding: 10px; /* Padding around the container */
+}
+
+.service-button {
+    background-color: #00695c; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 10px; /* Rounded corners for buttons */
+    padding: 20px 40px; /* Padding inside buttons */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+        flex: 0 1 auto; /* Buttons can shrink but not grow, preserving their intrinsic size */
+        /* Add any other styles for button appearance here */
+}
+
+.service-button:hover {
+    background-color: #004d40; /* Darker shade on hover */
+}
+
+@media (max-width: 768px) {
+    .navigation-menu {
+        flex-direction: column;
+    }
+
+    .navigation-menu li {
+        margin: 5px 0;
+    }
+    
+    .services-container {
+        flex-direction: column;
+    }
+}
+/* Existing CSS */
+.service-button {
+    /* Existing styles */
+    cursor: pointer; /* Make sure it's clear the button is clickable */
+}
+
+/* Floating Form Styles */
+.floating-form-container {
+    position: fixed; /* Fixed position to stay in place when scrolling */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    background-color: white; /* Background of the form */
+    padding: 20px; /* Padding around the form */
+    z-index: 10; /* Ensure it's above other content */
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a "floating" effect */
+}
+
+.floating-form-container form {
+    display: flex;
+    flex-direction: column; /* Stack form fields vertically */
+}
+
+.floating-form-container label {
+    margin-top: 10px;
+}
+
+.floating-form-container input {
+    margin-top: 5px;
+    margin-bottom: 10px; /* Space between form fields */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.floating-form-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.floating-form-container button:nth-child(2) {
+    background-color: #f44336; /* Different color for the close button */
+}
+/* Floating Message Container */
+.floating-message-container {
+    position: fixed; /* Fixed position to stay in place when scrolling */
+    top: 20%; /* Position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for exact centering */
+    background-color: #dff0d8; /* Light green background for success */
+    color: #3c763d; /* Dark green text for visibility */
+    padding: 20px; /* Padding around the message */
+    z-index: 20; /* Ensure it's above other content */
+    border-radius: 8px; /* Rounded corners for the message box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a "floating" effect */
+    text-align: center; /* Center the text inside the message box */
+}
+
+.floating-message-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c; /* Bootstrap's btn-success color */
+    color: white;
+    cursor: pointer;
+}
+.floating-message-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #dff0d8; /* Light green background for success */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
+
+.floating-message-container button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Style for active menu item */
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: white;
+    color: black; /* You can adjust the text color as needed */
+    padding: 20px; 
+}
+
+/* Style for the navigation menu items */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px; /* Add spacing between menu items */
+}
+
+/* Other existing styles for the navigation menu items */
+nav ul li a {
+    text-decoration: none;
+    color: black; /* Default text color */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+/* Updated CSS for positioning the profile menu at the top right */
+.profile-menu {
+    position: fixed; /* Change to "fixed" for fixed positioning */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+    display: inline-block;
+}
+
+/* Rest of your existing CSS remains the same */
+.profile-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 40px; /* Icon size */
+    color: #333; /* Icon color */
+}
+.profile-button img {
+    width: 80px; /* Adjust as necessary */
+    height: 80px; /* Adjust as necessary */
+}
+
+/* Updated CSS for the profile menu dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0; /* Align the dropdown to the right side */
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.profile-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Ensure the dropdown does not go off screen when right aligned */
+@media screen and (max-width: 600px) {
+    .dropdown-content {
+        right: 0;
+        left: auto;
+    }
+}
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container .form-control {
+    flex-grow: 0;
+}
+
+.toggle-password {
+    
+    margin-left: -30px; /* Adjust based on your design */
+    cursor: pointer;
+    padding-left: 10px;
+}
+body, html {
+    background-color: #e0f2f1;
+    font-family: Arial, sans-serif;
+}
+
+.services-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.services-section h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.form-section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #00897b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #00695c;
+}
+
+@media (max-width: 768px) {
+    .services-section {
+        width: 90%;
+        padding: 15px;
+    }
+}

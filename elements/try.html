@@ -1,0 +1,131 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOA Community Dashboard</title>
+<style>/* styles.css */
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+    
+    header {
+      background: #005f73;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+    
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .welcome {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+    }
+    
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 0;
+    }
+    
+    .info article {
+      flex: 1;
+      padding: 1rem;
+    }
+    
+    .links ul {
+      list-style: none;
+    }
+    
+    .links li a {
+      text-decoration: none;
+      color: #0077b6;
+      transition: color 0.3s;
+    }
+    
+    .links li a:hover {
+      color: #023e8a;
+    }
+    
+    footer {
+      background: #001219;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    
+    @media (max-width: 768px) {
+      .info {
+        flex-direction: column;
+      }
+    }
+    </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Your HOA Name</h1>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <img src="hoa-hero.jpg" alt="HOA Community Image">
+    <div class="welcome">
+      <h2>Welcome to Your Community!</h2>
+      <p>Here's the latest news and information from your Homeowners Association.</p>
+    </div>
+  </section>
+  <section class="info">
+    <article class="about">
+      <h3>About Us</h3>
+      <p>Learn about our community's history, mission, and values.</p>
+    </article>
+    <article class="contact">
+      <h3>Contact Info</h3>
+      <p>Address: 123 Community Lane</p>
+      <p>Phone: (123) 456-7890</p>
+      <p>Email: contact@yourhoa.com</p>
+    </article>
+    <article class="links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#bylaws">Bylaws</a></li>
+        <li><a href="#payment">Payment</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+    </article>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2024 Your HOA Name. All rights reserved.</p>
+</footer>
+</body>
+</html>
